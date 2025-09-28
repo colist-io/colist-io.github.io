@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="80" fill="#2563EB"/>
+  <circle cx="100" cy="100" r="60" fill="#3B82F6"/>
+  <text x="100" y="100" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="24" font-weight="700">$CLT</text>
+  <circle cx="100" cy="100" r="80" stroke="#1D4ED8" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="100" y="180" text-anchor="middle" fill="#6B7280" font-family="Inter, sans-serif" font-size="12" font-weight="500">Token</text>
+</svg>
+

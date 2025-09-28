@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoList App - Try It Out</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .app-mockup {
+            background: #f8fafc;
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+        
+        .mockup-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .mockup-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .mockup-header h1 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .mockup-header p {
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+        
+        .phone-mockup {
+            width: 320px;
+            height: 640px;
+            background: #1f2937;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .status-bar {
+            height: 30px;
+            background: #2563eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .app-header {
+            height: 60px;
+            background: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: white;
+        }
+        
+        .app-logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .app-logo img {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+        }
+        
+        .app-logo h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        .app-content {
+            padding: 20px;
+            height: calc(100% - 90px);
+            overflow-y: auto;
+        }
+        
+        .task-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        
+        .task-title {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 14px;
+        }
+        
+        .task-reward {
+            background: #10b981;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .task-description {
+            color: #6b7280;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        
+        .task-location {
+            color: #9ca3af;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .bottom-nav {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: #6b7280;
+            font-size: 10px;
+        }
+        
+        .nav-item.active {
+            color: #2563eb;
+        }
+        
+        .nav-icon {
+            width: 20px;
+            height: 20px;
+            background: currentColor;
+            border-radius: 3px;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 8px 16px;
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+        
+        .demo-notice {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .demo-notice h3 {
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+        
+        .demo-notice p {
+            color: #a16207;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-mockup">
+        <a href="index.html" class="back-button">← Back to Website</a>
+        
+        <div class="mockup-container">
+            <div class="mockup-header">
+                <h1>Try CoList App</h1>
+                <p>Experience how CoList works with this interactive mockup</p>
+            </div>
+            
+            <div class="demo-notice">
+                <h3>📱 App Demo</h3>
+                <p>This is a preview of the CoList mobile app interface. Scroll through the tasks and explore the features!</p>
+            </div>
+            
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="status-bar">
+                        <span>9:41</span>
+                        <span>CoList</span>
+                        <span>100%</span>
+                    </div>
+                    
+                    <div class="app-header">
+                        <div class="app-logo">
+                            <img src="images/colist-logo.png" alt="CoList Logo">
+                            <h2>CoList</h2>
+                        </div>
+                        <span style="font-size: 14px;">Nearby Tasks</span>
+                    </div>
+                    
+                    <div class="app-content">
+                        <div class="task-card">
+                            <div class="task-header">
+                                <div class="task-title">Yard Cleanup Needed</div>
+                                <div class="task-reward">$25</div>
+                            </div>
+                            <div class="task-description">Help clean up fallen leaves and trim overgrown bushes in backyard</div>
+                            <div class="task-location">📍 0.3 miles away</div>
+                        </div>
+                        
+                        <div class="task-card">
+                            <div class="task-header">
+                                <div class="task-title">Community Service Hours</div>
+                                <div class="task-reward">$CLT</div>
+                            </div>
+                            <div class="task-description">Volunteer at local food bank - court-verified hours available</div>
+                            <div class="task-location">📍 1.2 miles away</div>
+                        </div>
+                        
+                        <div class="task-card">
+                            <div class="task-header">
+                                <div class="task-title">Trash Pickup</div>
+                                <div class="task-reward">$15</div>
+                            </div>
+                            <div class="task-description">Clean up litter along Main Street - bring your own bags</div>
+                            <div class="task-location">📍 0.8 miles away</div>
+                        </div>
+                        
+                        <div class="task-card">
+                            <div class="task-header">
+                                <div class="task-title">Event Setup</div>
+                                <div class="task-reward">$40</div>
+                            </div>
+                            <div class="task-description">Help set up tables and chairs for community event</div>
+                            <div class="task-location">📍 2.1 miles away</div>
+                        </div>
+                        
+                        <div class="task-card">
+                            <div class="task-header">
+                                <div class="task-title">Senior Assistance</div>
+                                <div class="task-reward">$CLT</div>
+                            </div>
+                            <div class="task-description">Help elderly neighbor with grocery shopping and errands</div>
+                            <div class="task-location">📍 0.5 miles away</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bottom-nav">
+                        <div class="nav-item active">
+                            <div class="nav-icon"></div>
+                            <span>Tasks</span>
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-icon"></div>
+                            <span>Post</span>
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-icon"></div>
+                            <span>Profile</span>
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-icon"></div>
+                            <span>Wallet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

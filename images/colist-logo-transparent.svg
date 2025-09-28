@@ -1,0 +1,39 @@
+<svg width="480" height="462" viewBox="0 0 480 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer ring -->
+  <circle cx="240" cy="231" r="200" stroke="#20B2AA" stroke-width="20" fill="none"/>
+  
+  <!-- Inner circle -->
+  <circle cx="240" cy="231" r="80" fill="#20B2AA"/>
+  
+  <!-- Connection nodes on outer ring -->
+  <circle cx="240" cy="31" r="15" fill="white"/>
+  <circle cx="449" cy="231" r="15" fill="white"/>
+  <circle cx="240" cy="431" r="15" fill="white"/>
+  <circle cx="31" cy="231" r="15" fill="white"/>
+  
+  <!-- Hands arranged in circle -->
+  <!-- Hand 1 (top) - light blue -->
+  <path d="M240 50 L250 40 L260 45 L255 55 L245 50 Z" fill="#87CEEB" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 2 (top-right) - light green -->
+  <path d="M380 100 L390 90 L400 95 L395 105 L385 100 Z" fill="#90EE90" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 3 (right) - light blue -->
+  <path d="M430 231 L420 221 L425 211 L435 216 L430 231 Z" fill="#87CEEB" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 4 (bottom-right) - light green -->
+  <path d="M380 362 L390 372 L400 367 L395 357 L385 362 Z" fill="#90EE90" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 5 (bottom) - light blue -->
+  <path d="M240 412 L250 422 L260 417 L255 407 L245 412 Z" fill="#87CEEB" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 6 (bottom-left) - light green -->
+  <path d="M100 362 L90 372 L80 367 L85 357 L95 362 Z" fill="#90EE90" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 7 (left) - light blue -->
+  <path d="M50 231 L60 221 L65 211 L55 216 L50 231 Z" fill="#87CEEB" stroke="#2F4F4F" stroke-width="2"/>
+  
+  <!-- Hand 8 (top-left) - light green -->
+  <path d="M100 100 L90 90 L80 95 L85 105 L95 100 Z" fill="#90EE90" stroke="#2F4F4F" stroke-width="2"/>
+</svg>
+
